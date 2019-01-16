@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Test</title>
+  </head>
+  <body>
+
+<div class="container col-md-3 my-4" >
+
+<form  id="form"  onsubmit="return validation(this)">
+<div  class="form-group">
+  <input type="text" name="user" data-validation="userX" class="form-control" id="userName" value="" placeholder="Name*">
+  <div id="errorName"></div>
+</div>
+<div class="form-group">
+  <input type="text" name="lastName" last="lastName" class="form-control" id="lastName" value="" placeholder="Last name*">
+  <div id="errorLastName"></div>
+</div>
+<div class="form-group">
+  <input type="text" name="email" class="form-control" id="email" value="" placeholder="Email*">
+  <div id="errorEmail"></div>
+</div>
+<div class="form-group">
+  <input type="password" name="password" class="form-control" id="password" value="" placeholder="Password*">
+  <div id="errorPassword"></div>
+</div>
+<div class="form-group">
+  <input type="date" name="bithday" data-name="userName" class="bithday" id="bithday" value="" placeholder="Bithday*">
+  <div id="errorBithday"></div>
+</div>
+<div class="radio">
+<input type="radio" name="gender" id="male" value="Male">
+  <label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="Female">
+  <label for="female">Female</label>
+  <div id="errorGender"></div>
+</div>
+<div class="form-group">
+  <select name="country" class="form-control">
+    <option disabled selected>Country*</option>
+    <option value="Ukraine">Ukraine</option>
+    <option value="USA">USA</option>
+    <option value="China">China</option>
+  </select>
+  <div id="errorCountry"></div>
+</div>
+<div class="form-group">
+  <input type="text" name="address" class="form-control" id="address" value="" placeholder="Address*">
+  <div id="errorAddress"></div>
+</div>
+
+<div>
+  <textarea name="dataNotes" class="form-control" rows="4"  placeholder="Notes"></textarea>
+</div>
+
+<div>
+  <input type="submit" class="btn btn-success my-2" name="submit" value="Submit">
+</div>
+
+
+</form>
+
+</div>
+
+  <script src="main.js" ></script>
+
+  </body>
+</html>

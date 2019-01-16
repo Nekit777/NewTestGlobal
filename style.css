@@ -1,0 +1,14 @@
+
+.container {
+  text-align: center;
+}
+
+
+.error {
+  color: red;
+}
+
+.errorBorder {
+  /* border: 1px solid red; */
+  border-color: red;
+}
